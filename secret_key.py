@@ -1,2 +1,2 @@
-openapi_key = "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"
-serpapi_key = "dd072f5acc1aa73c28f4de2afef98cb529dd9602321688252e3e6a7dac745e9b"
+openapi_key = "your api key "
+serpapi_key = "your api key "

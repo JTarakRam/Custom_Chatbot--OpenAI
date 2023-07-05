@@ -8,7 +8,7 @@ import json
 from llama_index import StorageContext, load_index_from_storage
 
 import os
-os.environ["OPENAI_API_KEY"] = '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'
+os.environ["OPENAI_API_KEY"] = 'your api key '
 
 # rebuild storage context
 storage_context = StorageContext.from_defaults(persist_dir='/Users/tarakram/Documents/Chatbot/index')
@@ -49,7 +49,7 @@ class Chatbot:
         with open(filename, 'w') as f:
             json.dump(self.chat_history, f)
             
-bot = Chatbot("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", index)
+bot = Chatbot("your api key ", index)
 
 # Streamlit app
 def main():
