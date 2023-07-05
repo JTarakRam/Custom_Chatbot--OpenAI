@@ -42,7 +42,7 @@ To run the chatbot, execute the following steps:
 1. Ensure that you have set up the API key and other configurations in the appropriate code file.
 2. Run the `streamlit run app.py` in your terminal, Access the application through the provided URL.
 
-![ChatBot](/Users/tarakram/Documents/Chatbot/Screenshot 2023-07-05 at 11.26.52 AM.png)
+![ChatBot](/Users/tarakram/Documents/Chatbot/README.md)
 
 ## Conclusion
 
