@@ -7,8 +7,9 @@ import os
 # with open(index_path, 'r') as f:
 #     index = json.load(f)
 from llama_index import StorageContext, load_index_from_storage
+from secret_key import openapi_key
 
-os.environ["OPENAI_API_KEY"] = 'Add your API Key here '
+os.environ["OPENAI_API_KEY"] = openapi_key
 
 # rebuild storage context
 storage_context = StorageContext.from_defaults(persist_dir='/Users/tarakram/Documents/Chatbot/index')
@@ -61,7 +62,7 @@ def main():
     # Check if user ID is provided
     if user_id:
         # Create chatbot instance for the user
-        bot = Chatbot("Add your API Key here ", index, user_id)
+        bot = Chatbot(openapi_key, index, user_id)
 
         # Load chat history
         bot.load_chat_history()
